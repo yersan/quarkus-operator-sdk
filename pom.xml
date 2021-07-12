@@ -26,19 +26,12 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.version>2.0.2.Final</quarkus.version>
     <java-operator-sdk.version>1.9.1</java-operator-sdk.version>
-<!--    <kubernetes-client.version>5.6-SNAPSHOT</kubernetes-client.version>-->
-    <kubernetes-client.version>PR3298-SNAPSHOT</kubernetes-client.version>
+    <kubernetes-client.version>5.6-SNAPSHOT</kubernetes-client.version>
   </properties>
-  <repositories>
-    <repository>
-      <id>jitpack</id>
-      <url>https://jitpack.io</url>
-    </repository>
-  </repositories>
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.github.fabric8io.kubernetes-client</groupId>
+        <groupId>io.fabric8</groupId>
         <artifactId>kubernetes-client-bom</artifactId>
         <version>${kubernetes-client.version}</version>
         <type>pom</type>
